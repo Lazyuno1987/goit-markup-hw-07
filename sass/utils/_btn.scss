@@ -1,0 +1,19 @@
+%btn{
+    min-width: 200px;  
+    min-height: 50px;
+    background-color: var(--accent-color);
+    color: var(--other-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+    }
+}

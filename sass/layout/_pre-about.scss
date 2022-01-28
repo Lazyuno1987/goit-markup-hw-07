@@ -5,11 +5,11 @@
   display: flex;
 }
 
-.pre-about-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
+// .pre-about-item:not(:nth-child(3n)) {
+//   margin-right: 30px;
+// }
 
-.pre-about-title {
+.pre-about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -19,10 +19,13 @@
   margin-bottom: 50px;
 }
 
-.pre-about-item {
+.pre-about-list__item {
   position: relative;
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
-.pre-about-text {
+.pre-about-div__text{
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);

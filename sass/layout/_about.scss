@@ -8,7 +8,7 @@
   display: flex;
 }
 
-.about-title {
+.container-about-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -17,23 +17,24 @@
   margin-bottom: 50px;
 }
 
-.about-item {
+.about-list__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
 }
 
-.about-item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
+
 
 .about-border {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.about-after-title {
+.about-border__title{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -42,7 +43,7 @@
   color: var(--first-color);
   margin-bottom: 10px;
 }
-.about-text {
+.about-border__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -55,22 +56,23 @@
   display: flex;
   justify-content: center;
 }
-.icons-about-item {
+.icons-about__item {
   width: 44px;
   height: 44px;
   display: flex;
-}
-.icons-about-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-.icons-about-svg {
+
+.icons-about__svg {
   width: 22px;
   height: 22px;
   fill: currentColor;
 }
 
-.icons-about-link {
+.icons-about__link {
   background-color: #ffffff;
   border-radius: 50%;
   display: flex;
