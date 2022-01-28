@@ -1,7 +1,16 @@
+
+.filters-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filters-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filters-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(500, 16px, 26px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-color);

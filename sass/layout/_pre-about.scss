@@ -5,14 +5,9 @@
   display: flex;
 }
 
-// .pre-about-item:not(:nth-child(3n)) {
-//   margin-right: 30px;
-// }
 
 .pre-about__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 42px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-color);
@@ -26,9 +21,7 @@
   }
 }
 .pre-about-div__text{
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  @include font(700, 14px, 16px);
   color: var(--other-color);
 
   text-transform: uppercase;
