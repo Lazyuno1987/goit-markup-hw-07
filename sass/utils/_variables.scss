@@ -3,12 +3,8 @@
   --accent-color: #2196f3;
   --second-color: #757575;
   --other-color: #ffffff;
+  --font-main:"Roboto", sans-serif;
+  --font-second: "Raleway";
 }
 
-@mixin font ($fw:400, $fs:18px, $lh:28px){
-  font-weight: $fw;
-  font-size: $fs;
-  line-height: ($lh/$fs);
-}
-  
 

@@ -3,15 +3,8 @@
   --accent-color: #2196f3;
   --second-color: #757575;
   --other-color: #ffffff;
-}
-
-.header-container__logo-header, .footer-logos__link {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19231;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+  --font-main:"Roboto", sans-serif;
+  --font-second: "Raleway";
 }
 
 .main-btn, .footer-form-btn, .modal-batton {
@@ -45,12 +38,21 @@
   transition-duration: 250ms;
 }
 
+.header-container__logo-header, .footer-logos__link {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19231;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
 html {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-main);
   color: var(--first-color);
 }
 
